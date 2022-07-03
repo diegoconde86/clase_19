@@ -1,4 +1,4 @@
-"""Projecto1 URL Configuration
+"""PrimerMVT URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -15,17 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Projecto1.views import saludar, segundo_saludo,diaDeHoy, saludoConNombre, probandoHtml, probandoHtml2, inicio
+from AppFamilia.views import familiar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', inicio),
-    path('saludo/', saludar, name='saludar'),
-    path('segundo_saludo/', segundo_saludo, name='segundo_saludo'),
-    path('diaDeHoy/', diaDeHoy, name='diaDeHoy'),
-    path('saludoConNombre/<nombre>', saludoConNombre, name='saludoConNombre'),
-    path('probandoHtml/', probandoHtml),
-    path('probandoHtml2/', probandoHtml2),
-  
-  
+    path('familiar/', familiar)
 ]

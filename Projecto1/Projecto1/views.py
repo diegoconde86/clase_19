@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from datetime import datetime
-from django.template import Context, Template
+from django.template import Context, Template, loader
 
 def saludar(request):
     return HttpResponse('Hola Mundo')
@@ -27,16 +27,21 @@ def probandoHtml(self):
 def probandoHtml2(self):
     nombre = 'Eduardo'
     apellido = 'Montero'
-    notas = [6,7,8,9,8,9,8,9]
+    #notas = [6,7,8,9,8,9,8,9]
 
     diccionario = { 'nombre': nombre,
                     'apellido': apellido
                     }
                     
-    miHtml = open('/media/eduardo/Datos/repo_personal/Django/Projecto1/Plantillas/template.html')
-    plantilla = Template(miHtml.read())
-    miHtml.close()
-    miContexto = Context(diccionario)
-    documento = plantilla.render(miContexto)
+    #miHtml = open('/media/eduardo/Datos/repo_personal/Django/Projecto1/Plantillas/template.html')
+    #plantilla = Template(miHtml.read())
+    plantilla = loader.get_template('template.html')
+    #miHtml.close()
+    #miContexto = Context(diccionario)
+    #documento = plantilla.render(miContexto)
+    documento = plantilla.render(diccionario)
 
     return HttpResponse(documento)
+
+def inicio(self):
+    return HttpResponse('<h1>Inicio</h1>' )
