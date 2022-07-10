@@ -7,7 +7,7 @@ Mascota:
 | Campos | Descripción                                   |
 |--------|------------------------------------|
 | Nombre | Nombre de la mascota               |
-| Edad   | Edad de la mascota                 |
+| Edad   | Edad en años de la mascota         |
 | Tipo   | Tipo de mascota (perro, gato, etc.)|
 
 Cliente:
@@ -38,3 +38,19 @@ Veterinario:
 |veterinarioFormulario.html| Formulario de Ingreso de datos del veterinario
 | busquedaMascota.html| Busca las mascotas con un nombre similar al ingresado |
 | resultadosBusqueda.html| Muestra el resultados de las búsqueda de las mascotas
+
+## Navegación
+Ingrese a: http://127.0.0.1:8000/App/
+Los links a Inicio, Mascota, Cliente y Veterinario por lo pronto no realizan ninguna funcionalidad más que dirigirse a la página.html respectiva.
+
+En el siguiente texto "xxxx" tiene que actualizarse con el nombre de la página respectiva:
+
+> Este es el contenido de **xxxx** tiene que actualizarse
+
+- En el link MascotaFormulario puede ingresar una mascota.
+
+- En el link ClienteFormulario puede ingresar un cliente.
+
+- En el link VeterinarioFormulario puede ingresar un veterinario.
+
+
