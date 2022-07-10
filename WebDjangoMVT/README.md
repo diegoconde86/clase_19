@@ -53,4 +53,8 @@ En el siguiente texto "xxxx" tiene que actualizarse con el nombre de la página 
 
 - En el link VeterinarioFormulario puede ingresar un veterinario.
 
+- En el link BusquedaMascota puede buscar los datos de las mascotas en base al nombre que se digite.
+
+
+
 
