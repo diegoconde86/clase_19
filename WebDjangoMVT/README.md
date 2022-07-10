@@ -1,2 +1,5 @@
 # Web Django
-En este proyecto tiene la siguiente estructura de carpetas:
+En este proyecto tiene los siguientes componentes:
+Menú Principal:
+    |
+
